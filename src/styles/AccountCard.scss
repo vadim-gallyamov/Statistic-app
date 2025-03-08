@@ -1,0 +1,56 @@
+// AccountCard.scss
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+.account-card__arrow-down {
+  cursor: pointer;
+  fill: $color-muted;
+}
+
+/* Блок: account-card */
+.account-card {
+  display: flex;
+  align-items: center;
+  background-color: $color-white;
+  width: 300px;
+  margin-top: $margin-top-default;
+  margin-left: $margin-left-default;
+  border-radius: $border-radius-medium;
+  margin-right: 38px;
+}
+
+/* Элементы: account-card__logo, account-card__info, account-card__nickname, account-card__position */
+.account-card__logo {
+  margin-right: $spacing-medium;
+}
+
+.account-card__info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: $font-size-small;
+  line-height: $line-height-default;
+  letter-spacing: $letter-spacing-default;
+  color: $color-muted;
+}
+
+.account-card__nickname {
+  font-family: $font-family-primary;
+  font-weight: 700;
+  font-size: $font-size-medium;
+  line-height: $line-height-title;
+  letter-spacing: $letter-spacing-title;
+  color: $color-dark-gray;
+}
+
+.account-card__position {
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: $font-size-small;
+  line-height: $line-height-default;
+  letter-spacing: $letter-spacing-default;
+  color: $color-muted;
+}

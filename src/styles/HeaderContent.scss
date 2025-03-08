@@ -1,0 +1,23 @@
+// HeaderContent.scss
+@use 'variables' as *;
+@use 'mixins' as *;
+
+:root {
+  --font-family: $font-family-primary;
+  --second-family: $font-family-second;
+  --third-family: $font-family-third;
+}
+
+.header-content {
+  background: $color-white;
+  position: relative;
+  margin-left: 133.5px;
+  z-index: 1;
+  border-radius: $border-radius-medium;
+  width: 1402px;
+  min-height: 1376px;
+}
+
+.header-title {
+  margin-top: $spacing-large;
+}

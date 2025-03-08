@@ -1,0 +1,53 @@
+// NavMenu.scss
+@use 'variables' as *;
+
+.nav-menu {
+  background: linear-gradient(180deg, $color-primary 0%, $color-secondary 100%);
+  color: $color-white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: $border-radius-medium $border-radius-medium 0 $border-radius-medium;
+  width: 267px;
+  height: 1376px;
+}
+
+.nav-menu__logo {
+  margin-top: 55px;
+  margin-left: $spacing-large;
+}
+
+.nav-menu__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  list-style: none;
+  margin-top: 85px;
+  padding: 0;
+  padding-left: 35px;
+}
+
+.nav-menu__nav-item {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+
+  &:hover { 
+    background-color: rgba(169, 233, 224, 0.35);
+    border-radius: 16px;
+    width: 64px;
+    height: 64px;
+  }
+
+  &--active {
+    background-color: rgba(169, 233, 224, 0.75);
+    border-radius: 16px;
+  }
+}

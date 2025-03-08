@@ -1,0 +1,22 @@
+// _base.scss
+@use 'variables' as *; // Импортируем переменные
+@use 'mixins' as *;     // Импортируем mixins
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: $color-light-gray;
+}
+
+.container {
+  width: $container-width;
+  display: flex;
+  background-color: $color-light-gray;
+  margin-top: $margin-top-default;
+  position: relative;
+  height: $container-height;
+  border-radius: $container-radius;
+}

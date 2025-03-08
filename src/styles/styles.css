@@ -1,0 +1,428 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 1560px;
+  display: flex;
+  background-color: #f8f8f8;
+  margin-top: 50px;
+  position: relative;
+  height: 1859px;
+  border-radius: 56px;
+}
+
+.nav-menu {
+  background: linear-gradient(180deg, #54d3c2 0%, #30898a 100%);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 56px 56px 0 56px;
+  width: 267px;
+  height: 1376px;
+}
+
+.nav-menu__logo {
+  margin-top: 55px;
+  margin-left: 32px;
+}
+
+.nav-menu__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  list-style: none;
+  margin-top: 85px;
+  padding: 0;
+  padding-left: 35px;
+}
+
+.nav-menu__nav-item {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.nav-menu__nav-item:hover {
+  background-color: rgba(169, 233, 224, 0.35);
+  border-radius: 16px;
+  width: 64px;
+  height: 64px;
+}
+.nav-menu__nav-item--active {
+  background-color: rgba(169, 233, 224, 0.75);
+  border-radius: 16px;
+}
+
+:root {
+  --font-family: $font-family-primary;
+  --second-family: $font-family-second;
+  --third-family: $font-family-third;
+}
+
+.header-content {
+  background: #fff;
+  position: relative;
+  margin-left: 133.5px;
+  z-index: 1;
+  border-radius: 56px;
+  width: 1402px;
+  min-height: 1376px;
+}
+
+.header-title {
+  margin-top: 32px;
+}
+
+:root {
+  --font-family: $font-family-primary;
+  --second-family: $font-family-second;
+  --third-family: $font-family-third;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 804px;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.account-card__arrow-down {
+  cursor: pointer;
+  fill: #989fa3;
+}
+
+/* Блок: account-card */
+.account-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: auto;
+  border-radius: 56px;
+  margin-right: 38px;
+}
+
+/* Элементы: account-card__logo, account-card__info, account-card__nickname, account-card__position */
+.account-card__logo {
+  margin-right: 24px;
+}
+
+.account-card__info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+  color: #989fa3;
+}
+
+.account-card__nickname {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 157%;
+  letter-spacing: -0.02em;
+  color: #323f47;
+}
+
+.account-card__position {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+  color: #989fa3;
+}
+
+:root {
+  --font-family: $font-family-primary;
+  --second-family: $font-family-second;
+  --third-family: $font-family-third;
+}
+
+.main-content {
+  background: #f8f8f8;
+  position: absolute;
+  margin-left: 133.5px;
+  margin-top: 154px;
+  z-index: 2;
+  border-radius: 56px;
+  width: 1402px;
+  height: 100%;
+  padding-left: 25px;
+}
+
+.content-title {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 157%;
+  letter-spacing: -0.02em;
+  color: #323f47;
+  margin: 0;
+  margin-top: 28px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.period-buttons__container {
+  display: flex;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.period-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #989fa3;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.period-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  width: 0;
+  height: 4px;
+  background-color: #54d3c2;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.period-button--selected {
+  color: #000;
+}
+
+.period-button--selected::after {
+  width: 100%;
+}
+
+.summary-blocks {
+  display: flex;
+  gap: 36px;
+}
+
+.summary-block--total {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 24px;
+  width: 264px;
+  height: 168px;
+  background-color: #54d3c2;
+  text-align: center;
+}
+
+.summary-block--B2B {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 24px;
+  width: 264px;
+  height: 168px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.summary-block--B2C {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 24px;
+  width: 264px;
+  height: 168px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.summary-block__percentage {
+  border-radius: 24px;
+  width: 144px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 275%;
+  letter-spacing: -0.04em;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+/* Стили для первого блока (total) при положительном значении */
+.summary-block__percentage--total-positive {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 275%;
+  letter-spacing: -0.04em;
+  color: #fff;
+  background: rgba(248, 248, 248, 0.25);
+}
+
+/* Стили для всех блоков при отрицательном значении */
+.summary-block__percentage--negative {
+  background: rgba(252, 92, 101, 0.15);
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 275%;
+  letter-spacing: -0.04em;
+  color: #fc5c65;
+}
+
+/* Стили для других блоков (B2B, B2C) при положительном значении */
+.summary-block__percentage--positive {
+  background: rgba(84, 211, 194, 0.15);
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 275%;
+  letter-spacing: -0.04em;
+  color: #54d3c2;
+}
+
+.summary-block__percentage-arrow {
+  font-family: "Font Awesome 6 Free", sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 259%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-right: 3px;
+}
+
+.summary-block--total__amount {
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 157%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-top: 13px;
+}
+
+.summary-block__text {
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.summary-block__total {
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 157%;
+  letter-spacing: -0.02em;
+  color: #323f47;
+  margin-top: 13px;
+}
+
+.summary-block__label {
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  color: #323f47;
+}
+
+.statistics-container {
+  width: 800px;
+  background-color: #fff;
+  border-radius: 32px;
+  margin-top: 32px;
+  padding: 0 30px 32px 36px;
+}
+
+.statistics-header {
+  display: flex;
+}
+
+.statistics-title {
+  margin: 0;
+  margin-top: 18px;
+  margin-right: auto;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 220%;
+  letter-spacing: -0.03em;
+  color: #323f47;
+}
+
+.summary-cards {
+  display: flex;
+  margin-top: 20px;
+  gap: 6%;
+}
+
+.summary-card {
+  display: flex;
+  align-items: center;
+}
+
+.summary-card__icon {
+  margin-right: 10px;
+}
+
+.summary-card__icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.summary-card__label {
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  color: #989fa3;
+}
+
+.summary-card__total {
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #323f47;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */

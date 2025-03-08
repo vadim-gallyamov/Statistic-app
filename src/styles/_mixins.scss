@@ -1,0 +1,21 @@
+// _mixins.scss
+@use 'variables' as *;
+@mixin font-settings(
+  $family: $font-family,
+  $weight: normal,
+  $size: 16px,
+  $line-height: 1.5,
+  $letter-spacing: 0
+) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

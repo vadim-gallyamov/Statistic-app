@@ -1,0 +1,276 @@
+// MainContent.scss
+@use 'variables' as *;
+@use 'mixins' as *;
+
+:root {
+  --font-family: $font-family-primary;
+  --second-family: $font-family-second;
+  --third-family: $font-family-third;
+}
+
+.main-content {
+  background: $color-light-gray;
+  position: absolute;
+  margin-left: 133.5px;
+  margin-top: 154px;
+  z-index: 2;
+  border-radius: $border-radius-medium;
+  width: 1402px;
+  height: 100%;
+  padding-left: 25px;
+}
+
+.content-title {
+  font-family: $font-family-primary;
+  font-weight: 800;
+  font-size: $font-size-large;
+  line-height: $line-height-title;
+  letter-spacing: $letter-spacing-title;
+  color: $color-dark-gray;
+  margin: 0;
+  margin-top: 28px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.period-buttons__container {
+  display: flex;
+  gap: $spacing-small;
+  margin-top: $spacing-large;
+}
+
+.period-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: $font-size-medium;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: $color-muted;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.period-button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  width: 0;
+  height: 4px;
+  background-color: $color-primary;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.period-button--selected {
+  color: $color-black;
+}
+
+.period-button--selected::after {
+  width: 100%;
+}
+
+.summary-blocks {
+  display: flex;
+  gap: $spacing-xlarge;
+}
+
+.summary-block--total {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: $border-radius-small;
+  width: 264px;
+  height: 168px;
+  background-color: $color-primary;
+  text-align: center;
+}
+
+.summary-block--B2B {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: $border-radius-small;
+  width: 264px;
+  height: 168px;
+  background-color: $color-white;
+  text-align: center;
+}
+
+.summary-block--B2C {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: $border-radius-small;
+  width: 264px;
+  height: 168px;
+  background-color: $color-white;
+  text-align: center;
+}
+
+.summary-block__percentage {
+  border-radius: $border-radius-small;
+  width: 144px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: $font-size-medium;
+  line-height: 275%;
+  letter-spacing: -0.04em;
+  margin: 0 auto;
+  margin-top: $spacing-large;
+}
+
+/* Стили для первого блока (total) при положительном значении */
+.summary-block__percentage--total-positive {
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: $font-size-medium;
+  line-height: 275%;
+  letter-spacing: -0.04em;
+  color: $color-white;
+  background: rgba($color-light-gray, 0.25);
+}
+
+/* Стили для всех блоков при отрицательном значении */
+.summary-block__percentage--negative {
+  background: rgba($color-accent, 0.15);
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: $font-size-medium;
+  line-height: 275%;
+  letter-spacing: -0.04em;
+  color: $color-accent;
+}
+
+/* Стили для других блоков (B2B, B2C) при положительном значении */
+.summary-block__percentage--positive {
+  background: rgba($color-primary, 0.15);
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: $font-size-medium;
+  line-height: 275%;
+  letter-spacing: -0.04em;
+  color: $color-primary;
+}
+
+.summary-block__percentage-arrow {
+  font-family: $font-family-third;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 259%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-right: 3px;
+}
+
+.summary-block--total__amount {
+  margin: 0;
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: $font-size-large;
+  line-height: $line-height-title;
+  letter-spacing: $letter-spacing-title;
+  color: $color-white;
+  margin-top: 13px;
+}
+
+.summary-block__text {
+  margin: 0;
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: $font-size-medium;
+  letter-spacing: -0.04em;
+  color: $color-white;
+}
+
+.summary-block__total {
+  margin: 0;
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: $font-size-large;
+  line-height: $line-height-title;
+  letter-spacing: $letter-spacing-title;
+  color: $color-dark-gray;
+  margin-top: 13px;
+}
+
+.summary-block__label {
+  margin: 0;
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: $font-size-medium;
+  letter-spacing: -0.04em;
+  color: $color-dark-gray;
+}
+
+.statistics-container {
+  width: 800px;
+  background-color: $color-white;
+  border-radius: 32px;
+  margin-top: $spacing-large;
+  padding: 0 30px 32px 36px;
+}
+
+.statistics-header {
+  display: flex;
+}
+
+.statistics-title {
+  margin: 0;
+  margin-top: 18px;
+  margin-right: auto;
+  font-family: $font-family-primary;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 220%;
+  letter-spacing: -0.03em;
+  color: $color-dark-gray;
+}
+
+.summary-cards {
+  display: flex;
+  margin-top: 20px;
+  gap: 6%;
+}
+
+.summary-card {
+  display: flex;
+  align-items: center;
+}
+
+.summary-card__icon {
+  margin-right: 10px;
+}
+
+.summary-card__icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.summary-card__label {
+  margin: 0;
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: $font-size-small;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  color: $color-muted;
+}
+
+.summary-card__total {
+  margin: 0;
+  font-family: $font-family-primary;
+  font-weight: 700;
+  font-size: $font-size-medium;
+  line-height: 120%;
+  color: $color-dark-gray;
+  margin-top: 5px;
+}
