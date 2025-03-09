@@ -105,7 +105,7 @@ body {
   fill: #989fa3;
 }
 
-/* Блок: account-card */
+
 .account-card {
   display: flex;
   align-items: center;
@@ -117,7 +117,6 @@ body {
   margin-right: 38px;
 }
 
-/* Элементы: account-card__logo, account-card__info, account-card__nickname, account-card__position */
 .account-card__logo {
   margin-right: 24px;
 }
@@ -278,7 +277,7 @@ body {
   margin-top: 32px;
 }
 
-/* Стили для первого блока (total) при положительном значении */
+
 .summary-block__percentage--total-positive {
   font-family: "Proxima Nova", sans-serif;
   font-weight: 600;
@@ -289,7 +288,6 @@ body {
   background: rgba(248, 248, 248, 0.25);
 }
 
-/* Стили для всех блоков при отрицательном значении */
 .summary-block__percentage--negative {
   background: rgba(252, 92, 101, 0.15);
   font-family: "Proxima Nova", sans-serif;
@@ -300,7 +298,7 @@ body {
   color: #fc5c65;
 }
 
-/* Стили для других блоков (B2B, B2C) при положительном значении */
+
 .summary-block__percentage--positive {
   background: rgba(84, 211, 194, 0.15);
   font-family: "Proxima Nova", sans-serif;

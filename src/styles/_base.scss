@@ -1,6 +1,5 @@
-// _base.scss
-@use 'variables' as *; // Импортируем переменные
-@use 'mixins' as *;     // Импортируем mixins
+@use 'variables' as *;
+@use 'mixins' as *;    
 
 body {
   margin: 0;

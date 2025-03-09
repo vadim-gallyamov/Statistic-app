@@ -1,4 +1,3 @@
-// MainContent.scss
 @use 'variables' as *;
 @use 'mixins' as *;
 
@@ -128,7 +127,6 @@
   margin-top: $spacing-large;
 }
 
-/* Стили для первого блока (total) при положительном значении */
 .summary-block__percentage--total-positive {
   font-family: $font-family-primary;
   font-weight: 600;
@@ -139,7 +137,6 @@
   background: rgba($color-light-gray, 0.25);
 }
 
-/* Стили для всех блоков при отрицательном значении */
 .summary-block__percentage--negative {
   background: rgba($color-accent, 0.15);
   font-family: $font-family-primary;
@@ -150,7 +147,6 @@
   color: $color-accent;
 }
 
-/* Стили для других блоков (B2B, B2C) при положительном значении */
 .summary-block__percentage--positive {
   background: rgba($color-primary, 0.15);
   font-family: $font-family-primary;

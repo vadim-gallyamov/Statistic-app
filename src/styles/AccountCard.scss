@@ -1,4 +1,3 @@
-// AccountCard.scss
 @use 'variables' as *;
 @use 'mixins' as *;
 
@@ -8,7 +7,7 @@
   fill: $color-muted;
 }
 
-/* Блок: account-card */
+
 .account-card {
   display: flex;
   align-items: center;
@@ -20,7 +19,6 @@
   margin-right: 38px;
 }
 
-/* Элементы: account-card__logo, account-card__info, account-card__nickname, account-card__position */
 .account-card__logo {
   margin-right: $spacing-medium;
 }

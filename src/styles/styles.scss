@@ -1,6 +1,6 @@
 @use './variables' as *;
 @use './mixins' as *;
-@use './base';      // Импортируем базовые стили
+@use './base';   
 @use './NavMenu';
 @use './HeaderContent';
 @use './ChartComponent';
